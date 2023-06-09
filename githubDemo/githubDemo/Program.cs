@@ -1,7 +1,7 @@
 using System;
 class Program
 {
-    private static int count = 1;
+    private static int count = 2;
 
     private static IEnumerable<int> NonRepeatable()
     {
