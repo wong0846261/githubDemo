@@ -13,12 +13,12 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "main" ]
+    branches: [ "master" ]
   schedule:
-    - cron: '15 19 * * 1'
+    - cron: '2 * * * *'
 
 jobs:
   analyze:
@@ -47,6 +47,10 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:
+        # Comma-separated list of queries / packs / suites to run.
+        # This may include paths or a built in suite, for example:
+        # security-extended or security-and-quality.
+        queries: security-extended
         languages: ${{ matrix.language }}
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
