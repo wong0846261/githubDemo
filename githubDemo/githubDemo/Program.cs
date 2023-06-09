@@ -22,7 +22,7 @@ class Program
     public int Max(int a, int b)
     {
         //return a > a ? a : b;
-        return a > a ? a : b;
+        return a > b ? a : b;
     }
 
     public static bool checkBoolean(bool a, bool b, bool c, bool d, bool e, bool f, bool g)
