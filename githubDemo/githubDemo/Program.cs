@@ -49,6 +49,7 @@ class Program
         int valueB = valueA;
         // int valueB = (int)valueA;
         // bool valueBoolean = checkBoolean(true, false, false, true, false, true, true); // Complex condition
+        bool valueBoolean = true;
         int rslt = pr.square(2); //Calling the method and assigning the value to an integer type
         Console.WriteLine("Square of the given number is  " + rslt + " boolean " + valueBoolean + " int " + valueB); //Printing the result
         // GC.Collect(); // Call to GC.Collect()
