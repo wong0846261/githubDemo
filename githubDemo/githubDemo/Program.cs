@@ -5,7 +5,7 @@ class Program
 
     private static IEnumerable<int> NonRepeatable()
     {
-        for (; count <= 4; count++)
+        for (; count <= 6; count++)
         {
             yield return count;
         }
