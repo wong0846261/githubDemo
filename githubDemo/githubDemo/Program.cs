@@ -5,7 +5,7 @@ class Program
 
     private static IEnumerable<int> NonRepeatable()
     {
-        for (; count <= 4; count++)
+        for (; count <= 6; count++)
         {
             yield return count;
         }
@@ -22,7 +22,7 @@ class Program
     public int Max(int a, int b)
     {
         //return a > a ? a : b;
-        return a > a ? a : b;
+        return a > b ? a : b;
     }
 
     public static bool checkBoolean(bool a, bool b, bool c, bool d, bool e, bool f, bool g)
@@ -49,6 +49,7 @@ class Program
         int valueB = valueA;
         // int valueB = (int)valueA;
         // bool valueBoolean = checkBoolean(true, false, false, true, false, true, true); // Complex condition
+        bool valueBoolean = true;
         int rslt = pr.square(2); //Calling the method and assigning the value to an integer type
         Console.WriteLine("Square of the given number is  " + rslt + " boolean " + valueBoolean + " int " + valueB); //Printing the result
         // GC.Collect(); // Call to GC.Collect()
