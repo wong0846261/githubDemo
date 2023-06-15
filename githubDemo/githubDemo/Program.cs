@@ -46,7 +46,7 @@ class Program
 
         // int compareValue = pr.Max(3, 64); // Useless assignment to local variable
 
-        int valueA = 83;
+        int valueA = 84;
         //int valueB = valueA;
         int valueB = (int)valueA;
         bool valueBoolean = checkBoolean(true, false, false, true, false, true, true); // Complex condition
